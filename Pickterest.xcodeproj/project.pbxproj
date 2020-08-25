@@ -8,22 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		5993DDDF24F46E00001EE389 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5993DDDE24F46E00001EE389 /* AppDelegate.swift */; };
-		5993DDE124F46E00001EE389 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5993DDE024F46E00001EE389 /* SceneDelegate.swift */; };
 		5993DDE324F46E00001EE389 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5993DDE224F46E00001EE389 /* ViewController.swift */; };
 		5993DDE624F46E00001EE389 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5993DDE424F46E00001EE389 /* Main.storyboard */; };
 		5993DDE824F46E05001EE389 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5993DDE724F46E05001EE389 /* Assets.xcassets */; };
 		5993DDEB24F46E05001EE389 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5993DDE924F46E05001EE389 /* LaunchScreen.storyboard */; };
+		5993DDF324F54552001EE389 /* GreatVibes-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5993DDF224F54552001EE389 /* GreatVibes-Regular.otf */; };
+		5993DDF524F5AD69001EE389 /* WrongPasswordModal.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5993DDF424F5AD69001EE389 /* WrongPasswordModal.xib */; };
+		5993DDF724F5AD77001EE389 /* WrongPasswordModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5993DDF624F5AD77001EE389 /* WrongPasswordModal.swift */; };
+		5993DDFB24F5B8FD001EE389 /* GalleryView ControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5993DDFA24F5B8FD001EE389 /* GalleryView ControllerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5993DDDB24F46E00001EE389 /* Pickterest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pickterest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5993DDDE24F46E00001EE389 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5993DDE024F46E00001EE389 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		5993DDE224F46E00001EE389 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5993DDE524F46E00001EE389 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5993DDE724F46E05001EE389 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5993DDEA24F46E05001EE389 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5993DDEC24F46E05001EE389 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5993DDF224F54552001EE389 /* GreatVibes-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GreatVibes-Regular.otf"; sourceTree = "<group>"; };
+		5993DDF424F5AD69001EE389 /* WrongPasswordModal.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WrongPasswordModal.xib; sourceTree = "<group>"; };
+		5993DDF624F5AD77001EE389 /* WrongPasswordModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrongPasswordModal.swift; sourceTree = "<group>"; };
+		5993DDFA24F5B8FD001EE389 /* GalleryView ControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GalleryView ControllerViewController.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +48,7 @@
 			children = (
 				5993DDDD24F46E00001EE389 /* Pickterest */,
 				5993DDDC24F46E00001EE389 /* Products */,
+				5993DDF224F54552001EE389 /* GreatVibes-Regular.otf */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,9 +64,11 @@
 			isa = PBXGroup;
 			children = (
 				5993DDDE24F46E00001EE389 /* AppDelegate.swift */,
-				5993DDE024F46E00001EE389 /* SceneDelegate.swift */,
 				5993DDE224F46E00001EE389 /* ViewController.swift */,
+				5993DDF424F5AD69001EE389 /* WrongPasswordModal.xib */,
+				5993DDF624F5AD77001EE389 /* WrongPasswordModal.swift */,
 				5993DDE424F46E00001EE389 /* Main.storyboard */,
+				5993DDFA24F5B8FD001EE389 /* GalleryView ControllerViewController.swift */,
 				5993DDE724F46E05001EE389 /* Assets.xcassets */,
 				5993DDE924F46E05001EE389 /* LaunchScreen.storyboard */,
 				5993DDEC24F46E05001EE389 /* Info.plist */,
@@ -125,6 +134,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5993DDF324F54552001EE389 /* GreatVibes-Regular.otf in Resources */,
+				5993DDF524F5AD69001EE389 /* WrongPasswordModal.xib in Resources */,
 				5993DDEB24F46E05001EE389 /* LaunchScreen.storyboard in Resources */,
 				5993DDE824F46E05001EE389 /* Assets.xcassets in Resources */,
 				5993DDE624F46E00001EE389 /* Main.storyboard in Resources */,
@@ -140,7 +151,8 @@
 			files = (
 				5993DDE324F46E00001EE389 /* ViewController.swift in Sources */,
 				5993DDDF24F46E00001EE389 /* AppDelegate.swift in Sources */,
-				5993DDE124F46E00001EE389 /* SceneDelegate.swift in Sources */,
+				5993DDF724F5AD77001EE389 /* WrongPasswordModal.swift in Sources */,
+				5993DDFB24F5B8FD001EE389 /* GalleryView ControllerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
