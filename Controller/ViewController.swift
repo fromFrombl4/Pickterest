@@ -8,6 +8,11 @@
 
 import UIKit
 
+//struct Params {
+//    var name: String
+//    var pass: String
+//}
+
 class ViewController: UIViewController {
     @IBOutlet weak var applicationLabel: UILabel!
     @IBOutlet weak var loginTextField: UITextField!
@@ -21,6 +26,7 @@ class ViewController: UIViewController {
     let modalHeight = 200
     let modalWidth = 400
     
+//    private var params = Params(name: "", pass: "")
     
     let redColorCode = "ea907a"
     let orangeColorCode = "fbc687"
@@ -31,14 +37,18 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        for family: String in UIFont.familyNames {
-            print(family)
-            for names: String in UIFont.fontNames(forFamilyName: family) {
-                print("== \(names)")
-            }
-        }
+        loginTextField.delegate = self
+        passwordTextField.delegate = self
+        
+//        for family: String in UIFont.familyNames {
+//            print(family)
+//            for names: String in UIFont.fontNames(forFamilyName: family) {
+//                print("== \(names)")
+//            }
+//        }
         
         self.setGradientBackground()
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -70,27 +80,43 @@ class ViewController: UIViewController {
         
         if loginTextField.text == userName && passwordTextField.text == password {
             
-            guard let controller = self.storyboard?.instantiateViewController(withIdentifier: "GalleryView ControllerViewController") as? ViewController else {
+            guard let controller = self.storyboard?.instantiateViewController(withIdentifier: "GalleryViewController") as? GalleryViewController else {
                 return
             }
-            
-            self.present(controller, animated: true, completion: nil)
+            self.navigationController?.pushViewController(controller, animated: true)
+//            self.present(controller, animated: true, completion: nil)
         } else {
              let xibView = WrongPasswordModal.instanceFromNib()
-            xibView.frame = CGRect(x: Int(self.view.frame.size.width / 2 - xibView.frame.size.width), y: Int(self.view.frame.size.height / 2 - xibView.frame.size.height), width: modalWidth, height: modalHeight)
+            xibView.frame = CGRect(x: Int(transparentView.frame.size.width / 2 - xibView.frame.size.width / 2), y: Int(transparentView.frame.size.height / 2 - xibView.frame.size.height / 2), width: modalWidth, height: modalHeight)
             transparentView.addSubview(xibView)
             
+            transparentView.alpha = 0.4
+            
+            
         }
+        transparentView.alpha = 1
+//        checkShouldEnableLoginButton()
     }
     
+//    private func checkShouldEnableLoginButton(){
+//
+//        if !params.name.isEmpty && !params.pass.isEmpty {
+//
+//            loginButton.isEnabled = true
+//        } else {
+//            loginButton.isEnabled = false
+//        }
+//
+//    }
     
-    
-    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
+    }
 
 
 }
 
-extension ViewController {
+extension ViewController: UITextFieldDelegate {
     func setGradientBackground() {
           
           let gradient = CAGradientLayer()
@@ -126,4 +152,23 @@ extension ViewController {
               alpha: CGFloat(1.0)
           )
       }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        
+        textField.resignFirstResponder()
+        return true
+    }
+    
+//    func textFieldDidEndEditing(_ textField: UITextField) {
+//
+//        guard let text = textField.text else {
+//            return
+//        }
+//
+//        if textField == loginTextField {
+//            params.name = text
+//        } else if textField == passwordTextField {
+//            params.pass = text
+//        }
+//    }
 }

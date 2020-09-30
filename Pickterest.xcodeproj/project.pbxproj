@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		593F221924FAEAC100BE3B31 /* FavoriteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593F221824FAEAC100BE3B31 /* FavoriteCell.swift */; };
 		5993DDDF24F46E00001EE389 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5993DDDE24F46E00001EE389 /* AppDelegate.swift */; };
 		5993DDE324F46E00001EE389 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5993DDE224F46E00001EE389 /* ViewController.swift */; };
 		5993DDE624F46E00001EE389 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5993DDE424F46E00001EE389 /* Main.storyboard */; };
@@ -15,10 +16,14 @@
 		5993DDF324F54552001EE389 /* GreatVibes-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5993DDF224F54552001EE389 /* GreatVibes-Regular.otf */; };
 		5993DDF524F5AD69001EE389 /* WrongPasswordModal.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5993DDF424F5AD69001EE389 /* WrongPasswordModal.xib */; };
 		5993DDF724F5AD77001EE389 /* WrongPasswordModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5993DDF624F5AD77001EE389 /* WrongPasswordModal.swift */; };
-		5993DDFB24F5B8FD001EE389 /* GalleryView ControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5993DDFA24F5B8FD001EE389 /* GalleryView ControllerViewController.swift */; };
+		5993DDFB24F5B8FD001EE389 /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5993DDFA24F5B8FD001EE389 /* GalleryViewController.swift */; };
+		5993DE1D24F6B25F001EE389 /* ShowImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5993DE1C24F6B25E001EE389 /* ShowImageViewController.swift */; };
+		5993DE1F24FADCBE001EE389 /* FavoriteCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5993DE1E24FADCBD001EE389 /* FavoriteCollectionViewCell.swift */; };
+		5993DE2224FADDFE001EE389 /* FavoriteImagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5993DE2124FADDFE001EE389 /* FavoriteImagesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		593F221824FAEAC100BE3B31 /* FavoriteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCell.swift; sourceTree = "<group>"; };
 		5993DDDB24F46E00001EE389 /* Pickterest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pickterest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5993DDDE24F46E00001EE389 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5993DDE224F46E00001EE389 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,7 +34,10 @@
 		5993DDF224F54552001EE389 /* GreatVibes-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GreatVibes-Regular.otf"; sourceTree = "<group>"; };
 		5993DDF424F5AD69001EE389 /* WrongPasswordModal.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WrongPasswordModal.xib; sourceTree = "<group>"; };
 		5993DDF624F5AD77001EE389 /* WrongPasswordModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrongPasswordModal.swift; sourceTree = "<group>"; };
-		5993DDFA24F5B8FD001EE389 /* GalleryView ControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GalleryView ControllerViewController.swift"; sourceTree = "<group>"; };
+		5993DDFA24F5B8FD001EE389 /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
+		5993DE1C24F6B25E001EE389 /* ShowImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowImageViewController.swift; sourceTree = "<group>"; };
+		5993DE1E24FADCBD001EE389 /* FavoriteCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCollectionViewCell.swift; sourceTree = "<group>"; };
+		5993DE2124FADDFE001EE389 /* FavoriteImagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteImagesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,9 +51,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		593F221624FAE90600BE3B31 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5993DE2124FADDFE001EE389 /* FavoriteImagesViewController.swift */,
+				5993DDE224F46E00001EE389 /* ViewController.swift */,
+				5993DE1C24F6B25E001EE389 /* ShowImageViewController.swift */,
+				5993DDFA24F5B8FD001EE389 /* GalleryViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		593F221724FAEAA400BE3B31 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				593F221824FAEAC100BE3B31 /* FavoriteCell.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		5993DDD224F46E00001EE389 = {
 			isa = PBXGroup;
 			children = (
+				593F221724FAEAA400BE3B31 /* Model */,
+				593F221624FAE90600BE3B31 /* Controller */,
+				5993DE2024FADCDA001EE389 /* View */,
 				5993DDDD24F46E00001EE389 /* Pickterest */,
 				5993DDDC24F46E00001EE389 /* Products */,
 				5993DDF224F54552001EE389 /* GreatVibes-Regular.otf */,
@@ -64,16 +94,22 @@
 			isa = PBXGroup;
 			children = (
 				5993DDDE24F46E00001EE389 /* AppDelegate.swift */,
-				5993DDE224F46E00001EE389 /* ViewController.swift */,
 				5993DDF424F5AD69001EE389 /* WrongPasswordModal.xib */,
 				5993DDF624F5AD77001EE389 /* WrongPasswordModal.swift */,
 				5993DDE424F46E00001EE389 /* Main.storyboard */,
-				5993DDFA24F5B8FD001EE389 /* GalleryView ControllerViewController.swift */,
 				5993DDE724F46E05001EE389 /* Assets.xcassets */,
 				5993DDE924F46E05001EE389 /* LaunchScreen.storyboard */,
 				5993DDEC24F46E05001EE389 /* Info.plist */,
 			);
 			path = Pickterest;
+			sourceTree = "<group>";
+		};
+		5993DE2024FADCDA001EE389 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5993DE1E24FADCBD001EE389 /* FavoriteCollectionViewCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,7 +188,11 @@
 				5993DDE324F46E00001EE389 /* ViewController.swift in Sources */,
 				5993DDDF24F46E00001EE389 /* AppDelegate.swift in Sources */,
 				5993DDF724F5AD77001EE389 /* WrongPasswordModal.swift in Sources */,
-				5993DDFB24F5B8FD001EE389 /* GalleryView ControllerViewController.swift in Sources */,
+				5993DDFB24F5B8FD001EE389 /* GalleryViewController.swift in Sources */,
+				5993DE1F24FADCBE001EE389 /* FavoriteCollectionViewCell.swift in Sources */,
+				593F221924FAEAC100BE3B31 /* FavoriteCell.swift in Sources */,
+				5993DE1D24F6B25F001EE389 /* ShowImageViewController.swift in Sources */,
+				5993DE2224FADDFE001EE389 /* FavoriteImagesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
