@@ -1,29 +1,16 @@
-//
-//  FavoriteImagesViewController.swift
-//  Pickterest
-//
-//  Created by Roman Dod on 8/29/20.
-//  Copyright © 2020 Roman Dod. All rights reserved.
-//
-
 import UIKit
 
 class FavoriteImagesViewController: UIViewController {
-
     @IBOutlet weak var collectionView: UICollectionView!
-    
     var itemFavoriteImagesArray: [FavoriteCell] = {
-        
         var blankCell = FavoriteCell()
         blankCell.name = "Coca-cola"
         blankCell.imageName = "kola"
         return [blankCell]
-        
     }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         collectionView.dataSource = self
         collectionView.delegate = self
     }
@@ -38,6 +25,7 @@ class FavoriteImagesViewController: UIViewController {
 //        }
 //    }
 }
+
 extension FavoriteImagesViewController: UICollectionViewDataSource, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return itemFavoriteImagesArray.count
